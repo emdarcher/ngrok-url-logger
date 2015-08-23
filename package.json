@@ -1,0 +1,19 @@
+{
+  "name": "ngrok-url-logger",
+  "version": "1.0.0",
+  "description": "a server & client system for logging the recent ngrok url for a host",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdarcher/ngrok-url-logger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emdarcher/ngrok-url-logger/issues"
+  },
+  "homepage": "https://github.com/emdarcher/ngrok-url-logger#readme"
+}
