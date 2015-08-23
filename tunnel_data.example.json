@@ -1,0 +1,8 @@
+{
+  "name": "home-http",
+  "public_url": "http://kljaowehn.ngrok.io",
+  "proto": "http",
+  "config": {
+    "addr": "localhost:80"
+  }
+}    

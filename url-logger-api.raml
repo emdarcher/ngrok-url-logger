@@ -1,0 +1,39 @@
+#%RAML 0.8
+
+title: ngrok-url-logger
+baseUri: http://localhost:4747/url-logger
+version: v1
+mediaType: application/json
+
+/{client_id}:
+  description: Accesses info for client with `client_id`
+  post:
+    description: create new client instance with data
+    body:
+      example: !include client_data.example.json
+    responses:
+      409:
+        description: Conflict client already exists, use PUT to modify
+  put:
+    description: replace/update the client's data
+    body:
+      example: !include client_data.example.json
+    responses:
+      404:
+        description: no client with that id found
+  get:
+    description: get data for the client
+    responses:
+      200:
+        body:
+          example: !include client_data.example.json
+  /{tunnel}:
+    description: data for a single tunnel on a client
+    get:
+      responses:
+        200:
+          body:
+            example: !include tunnel_data.example.json
+
+
+
