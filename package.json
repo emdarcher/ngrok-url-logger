@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/emdarcher/ngrok-url-logger#readme",
   "dependencies": {
-    "restify": "^4.0.0"
+    "restify": "^4.0.0",
+    "sequelize": "^3.6.0",
+    "sqlite3": "^3.0.10"
   }
 }
